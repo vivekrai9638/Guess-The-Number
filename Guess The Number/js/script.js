@@ -6,14 +6,16 @@ const wrapperStyle = document.querySelector('.wrapper').style;
 const messageStyle = document.querySelector('.message').style;
 const secretNumber = document.querySelector('.number').textContent;
 const secretNumberStyle = document.querySelector('.number').style;
-
+sessionStorage.setItem('high-score', 0);
 document.querySelector('.check').addEventListener('click', function () {
     const guess = Number(document.querySelector('.guess').value);
     if (number === guess) {
         document.querySelector('.number').textContent = number;
         document.querySelector('.number').style = 'background:rgba(0,0,0,.4);z-index:10;';
-        sessionStorage.setItem('high-score', score);
-        document.querySelector('.high-score').innerHTML = `<strong>Highest Score:</strong> ${score}`;
+        if (score > sessionStorage.getItem('high-score')) {
+            sessionStorage.setItem('high-score', score);
+        }
+        document.querySelector('.high-score').innerHTML = `<strong>Highest Score:</strong> ${sessionStorage.getItem('high-score')}`;
         document.querySelector('.wrapper').style.background = 'rgba(0,255,0,0.2)';
         document.querySelector('.message').textContent = '🎉 Correct Number';
     }
