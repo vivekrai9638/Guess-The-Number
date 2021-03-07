@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Guess The Number</title>
+
+    <!-- fav-icon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <div class="wrapper"></div>
+    <header>
+      <button class="btn try">Try Again!</button>
+      <p>( Enter Between 0 &amp; 40 )</p>
+    </header>
+    <div class="branding">
+      <h1 class="heading">Guess The Number</h1>
+    </div>
+    <div class="number">?</div>
+    <section class="game">
+      <div class="panel">
+        <input type="number" class="guess" />
+        <button class="btn check">Check!</button>
+      </div>
+      <div class="panel-info">
+        <p class="message"><strong>Begin Guessing....</strong></p>
+        <p class="score"><strong>Score:</strong> 50</p>
+        <p class="high-score"><strong>Highest Score:</strong> 0</p>
+        <script src="js/script.js"></script>
+      </div>
+    </section>
+  </body>
+</html>

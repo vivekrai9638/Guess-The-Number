@@ -1,0 +1,6 @@
+A project made under guidance of Jonas Schmedtman (Udemy)
+
+Technologies used:
+HTML5
+CSS3
+JavaScript
