@@ -62,6 +62,15 @@ header {
   cursor: pointer;
   outline: none;
 }
+.btn:active {
+  transform: scale(0.95);
+}
+
+.btn:hover {
+  color: #69afc0;
+  border: 0.2rem solid #ddd;
+}
+
 
 header p {
   margin: auto 1rem;
