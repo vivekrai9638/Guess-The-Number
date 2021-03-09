@@ -25,18 +25,18 @@ document.querySelector('.check').addEventListener('click', function () {
         document.querySelector('.message').textContent = '🎉 Correct Number';
     }
     else if (guess < number) {
-        lowGuess();
         if (guess <= number - 10) {
             document.querySelector('.message').textContent = '📉 Too Low !';
         } else if (guess <= number - 3 && guess > number - 10) document.querySelector('.message').textContent = "😁 Not Bad, You're Getting closer!";
         else document.querySelector('.message').textContent = "😯 Woahh! You're damn Close.";
+        lowGuess();
     }
     else if (guess > number) {
-        highGuess();
         if (guess >= number + 10) {
             document.querySelector('.message').textContent = '📉 Too High !';
         } else if (guess >= number + 3 && guess < number + 10) document.querySelector('.message').textContent = "😁 Not Bad, You're Getting closer!";
         else document.querySelector('.message').textContent = "😯 Woahh! You're damn Close.";
+        highGuess();
     }
 
     // console.log(score);
